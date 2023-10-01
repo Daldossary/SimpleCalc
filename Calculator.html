@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Simple Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./Calc-Style.css">
+    </head>
+    <body>
+        <h1>Simple Calculator</h1>
+
+        <div id="display">0</div>
+
+        <div id="calcBttns">
+            <button class="operator" id="add" 
+            onclick="display('+')">+</button>
+            <button class="operator" id="subtract" onclick="display('-')">-</button>
+            <button class="operator" id="multiply" onclick="display('x')">&times;</button>
+            <button class="operator" id="divide" onclick="display('/')">&divide;</button>
+
+            <button class="key" id="seven" onclick="display('7')">7</button>
+            <button class="key" id="eight" onclick="display('8')">8</button>
+            <button class="key" id="nine" onclick="display('9')">9</button>
+
+            <button class="key" id="equals" onclick="calc()">=</button>
+
+            <button class="key" id="four" onclick="display('4')">4</button>
+            <button class="key" id="five" onclick="display('5')">5</button>
+            <button class="key" id="six" onclick="display('6')">6</button>
+            <button class="key" id="one" onclick="display('1')">1</button>
+            <button class="key" id="two" onclick="display('2')">2</button>
+            <button class="key" id="three" onclick="display('3')">3</button>
+
+            <button class="key" id="decimal" onclick="display('.')">.</button>
+
+            <button class="key" id="zero" onclick="display('0')">0</button>
+
+            <button class="key" id="reset" onclick="reset()">C</button>
+        </div>
+
+        <script src="Calc-JS.js" async defer></script>
+
+    </body>
+</html>

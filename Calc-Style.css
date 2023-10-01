@@ -1,0 +1,103 @@
+body {
+    align-items: center;
+    justify-content: center;
+    display: flexbox;
+}
+
+.key {
+    color:#000;
+    font: 20px Arial, sans-serif;
+    background-color: #dfdfdf;
+    border: 0.25px solid #acacac;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    font: italic 30px Arial, sans-serif;
+    color: #4d4d4d;
+    margin: 0;
+    padding: 20px;
+    background-color: #e4e2e2;
+    border-radius: 10px;
+    margin: 10%;
+    margin-bottom: 0;
+}
+
+.key:hover {
+    background-color: #cbcbcb;
+}
+
+.key:active {
+    background-color: #abaaaa;
+}
+
+.operator {
+    background-color: #ff9800;
+    color: #fff;
+    font: 30px Arial, sans-serif;
+    border-right: 1px solid #dd7c06 !important;
+    border: none;
+}
+
+#seven, #four, #one {
+    border-left: 0.5px solid #fff;
+}
+
+#seven, #eight, #nine {
+    border-top: none;
+}
+
+#nine, #six, #three, #reset {
+    border-right: none;
+}
+
+#zero, #reset, #decimal {
+    border-bottom: 0.5px solid #fff;
+}
+
+#decimal {
+    border-left: 0.5px solid #fff;
+    border-bottom-left-radius: 10px;
+}
+
+#calcBttns {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10%;
+    margin-top: 0;
+}
+
+#display {
+    grid-column: span 4;
+    text-align: right;
+    padding: 20px;
+    font-size: 2em;
+    background-color: #000;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin: 10%;
+    margin-bottom: 0;
+    color:#fff;
+    font: 35px Arial, sans-serif;
+}
+
+#equals {
+    grid-row: span 4;
+    background-color: #ff9800;
+    color: #fff;
+    border: 1px solid #e68004;
+    font: 30px Arial, sans-serif;
+    border-bottom-right-radius: 10px;
+}
+
+#equals:hover, .operator:hover {
+    background-color: #e68004;
+}
+
+#equals:active, .operator:active {
+    background-color: #c67007;
+}
+
